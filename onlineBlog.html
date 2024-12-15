@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Beauty Blog</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+<body class="bg-gray-50 text-gray-800 font-sans ">
+  <!-- Header Section -->
+  <header class="bg-pink-500 text-white p-6">
+    <div class="container mx-auto flex justify-between items-center">
+      <h1 class="text-3xl font-bold">Beauty Blog</h1>
+      <nav class="space-x-6 max-[500px]:hidden">
+        <a href="#home" class="hover:text-pink-200">Home</a>
+        <a href="#categories" class="hover:text-pink-200">Categories</a>
+        <a href="#contact" class="hover:text-pink-200">Contact</a>
+      </nav>
+      <div class="hidden max-[500px]:block cursor-pointer">
+        <i class='bx bx-menu' style='color:#ffffff'></i>
+      </div>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section id="home" class="bg-pink-100 py-12 text-center h-[60vh] flex flex-col justify-center items-center">
+    <div class="container mx-auto">
+      <h2 class="text-4xl font-extrabold text-pink-500">Welcome to Your Beauty Haven</h2>
+      <p class="text-lg mt-4 text-gray-700">Explore the latest trends, tips, and products for your beauty routine.</p>
+      <button class="mt-6 px-6 py-3 bg-pink-500 text-white rounded-full hover:bg-pink-400">Get Started</button>
+    </div>
+  </section>
+
+  <!-- Featured Posts Section -->
+  <section id="featured" class="p-12 bg-white">
+    <div class="container mx-auto">
+      <h3 class="text-3xl font-semibold text-center text-gray-800 mb-8">Featured Posts</h3>
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+        <!-- Post Card -->
+        <div class="bg-gray-100 rounded-lg overflow-hidden shadow-lg">
+          <img src="images/Post01.png" alt="Post Image" class="w-full h-70 object-cover">
+          <div class="p-4">
+            <h4 class="text-xl font-bold text-pink-500">Post Title</h4>
+            <p class="text-sm text-gray-600 mt-2">A short excerpt about this featured blog post.</p>
+          </div>
+        </div>
+        <div class="bg-gray-100 rounded-lg overflow-hidden shadow-lg">
+          <img src="images/Post02.png" alt="Post Image" class="w-full h-70 object-cover">
+          <div class="p-4">
+            <h4 class="text-xl font-bold text-pink-500">Post Title</h4>
+            <p class="text-sm text-gray-600 mt-2">A short excerpt about this featured blog post.</p>
+          </div>
+        </div>
+        <div class="bg-gray-100 rounded-lg overflow-hidden shadow-lg">
+          <img src="images/Post03.png" alt="Post Image" class="w-full h-70 object-cover">
+          <div class="p-4">
+            <h4 class="text-xl font-bold text-pink-500">Post Title</h4>
+            <p class="text-sm text-gray-600 mt-2">A short excerpt about this featured blog post.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Categories Section -->
+  <section id="categories" class="py-12 bg-pink-100">
+    <div class="container mx-auto text-center">
+      <h3 class="text-3xl font-semibold text-gray-800 mb-8">Categories</h3>
+      <div class="flex justify-center space-x-4">
+        <span class="px-6 py-2 bg-pink-500 text-white rounded-full hover:bg-pink-400">Skincare</span>
+        <span class="px-6 py-2 bg-pink-500 text-white rounded-full hover:bg-pink-400">Makeup</span>
+        <span class="px-6 py-2 bg-pink-500 text-white rounded-full hover:bg-pink-400">Haircare</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- Newsletter Subscription -->
+  <section class="py-12 bg-white">
+    <div class="container mx-auto text-center">
+      <h3 class="text-3xl font-semibold text-gray-800 mb-6">Subscribe to Our Newsletter</h3>
+      <p class="text-gray-600 mb-6">Get the latest beauty tips and product reviews delivered to your inbox.</p>
+      <form class="flex justify-center space-x-4">
+        <input type="email" placeholder="Your Email" class="p-3 w-1/2 border border-gray-300 rounded-md">
+        <button type="submit" class="bg-pink-500 text-white px-6 py-3 rounded-full hover:bg-pink-400">Subscribe</button>
+      </form>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-pink-500 text-white py-6">
+    <div class="container mx-auto text-center">
+      <p>© 2024 Beauty Blog. All Rights Reserved.</p>
+      <div class="flex justify-center space-x-4 mt-4">
+        <a href="#" class="hover:text-pink-300">Facebook</a>
+        <a href="#" class="hover:text-pink-300">Instagram</a>
+        <a href="#" class="hover:text-pink-300">Twitter</a>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>
